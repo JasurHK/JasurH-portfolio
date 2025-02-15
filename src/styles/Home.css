@@ -159,3 +159,8 @@
   .contact-button {
     animation: slideInLeft 1s ease-out 1.5s forwards; /* Even longer delay */
   }
+  @media (max-width: 414px) {
+    .home-image , .home-image img {
+      display: none;
+    }
+  }
