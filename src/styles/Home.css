@@ -1,0 +1,161 @@
+/* Home Page Styling */
+.home-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    color: white;
+    padding: 20px;
+  }
+  
+  .home-content {
+    display: flex;
+    max-width: 1000px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+  }
+  
+  .home-text {
+    flex: 1;
+  }
+  
+  .home-text h1 {
+    font-size: 48px;
+    font-weight: bold;
+  }
+  
+  .highlight {
+    color: #ff0077;
+  }
+  
+  .home-text p {
+    font-size: 18px;
+    color: #aaa;
+    margin-top: 10px;
+  }
+  
+  .contact-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 20px;
+    background: linear-gradient(to right, #ff0077, #ff6600);
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+  
+  .contact-button:hover {
+    opacity: 0.8;
+  }
+  
+  .home-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .home-image img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 4px solid #ff0077;
+    object-fit: cover;
+  }
+  
+  /* Keyframes for animations */
+@keyframes popIn {
+    0% {
+      transform: scale(0);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInLeft {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInRight {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes bounceIn {
+    0% {
+      transform: scale(0);
+      opacity: 0;
+    }
+    50% {
+      transform: scale(1.2);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  .escaping-image {
+    position: relative;
+    transition: transform 0.3s ease-out;
+  }
+  
+  .escaping-image img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 4px solid #ff0077;
+    object-fit: cover;
+    transition: transform 0.3s ease-out;
+  }
+  
+  .home-image {
+    animation: bounceIn 1s ease-out forwards;
+  }
+  
+  /* Apply animations to elements */
+  .home-text {
+    animation: slideInLeft 1s ease-out forwards;
+  }
+  
+  /* .home-image {
+    animation: popIn 1s ease-out forwards;
+  } */
+  
+  .home-text h1,
+  .home-text p,
+  .contact-button {
+    opacity: 0; /* Start invisible */
+  }
+  
+  .home-text h1 {
+    animation: slideInLeft 1s ease-out 0.5s forwards; /* Delay for staggered effect */
+  }
+  
+  .home-text p {
+    animation: slideInLeft 1s ease-out 1s forwards; /* Slightly longer delay */
+  }
+  
+  .contact-button {
+    animation: slideInLeft 1s ease-out 1.5s forwards; /* Even longer delay */
+  }
