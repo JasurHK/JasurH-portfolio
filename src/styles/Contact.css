@@ -93,7 +93,7 @@
   }
   
   @media (max-width: 414px) {
-    .contact-conteiner{
+    .contact-content{
       display: none;
     }
   }
