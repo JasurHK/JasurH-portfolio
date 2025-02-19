@@ -19,7 +19,7 @@ const projects = [
       title: "Weather App ⛅",
       description: "Get real-time weather updates from any location.",
       image: weatherAppImg,
-      link: "https://your-weather-app-link.com/",
+      link: "https://weather-app-dem.netlify.app/",
     },
     {
       id: 3,
@@ -33,7 +33,7 @@ const projects = [
       title: "To-Do List ✅",
       description: "A simple and effective to-do list for task management.",
       image: todoListImg,
-      link: "https://your-todo-app-link.com/",
+      link: "https://task-manager-c.netlify.app",
     },
   ];
   
